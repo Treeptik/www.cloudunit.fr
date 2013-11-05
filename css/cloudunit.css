@@ -421,6 +421,19 @@ footer .footbot img {
 	opacity: 1;
 }
 
+.footer-navi{
+	text-transform: none;
+	font-size: 1em;
+}
+
+.footer-navi a {
+	color: #1b95cd;
+}
+
+.footer-navi a:hover {
+	color: #f1c40f;
+}
+
 footer .logo-footer{
 	height: 36px;
 }
