@@ -112,7 +112,7 @@
 ================================================== */
 
 	a, a:visited { color: #1b95cd; text-decoration: none; outline: 0; }
-	a:hover, a:focus { color: #ff9900; }
+	a:hover, a:focus { color: #f1c40f; }
 	p a, p a:visited { line-height: inherit; }
 	a:active { outline:none; opacity: 0.75; }
 
@@ -141,6 +141,7 @@
 	ul.square li, li.square { background:url(../images/li-square.png) no-repeat left 2px; }
 	ul.circle li, li.circle { background:url(../images/li-circle.png) no-repeat left 3px; }
 	ul.cross li, li.cross { background:url(../images/li-cross.png) no-repeat left 2px; }
+	ul.cloud li, li.cloud { background:url(../images/li-cloud.png) no-repeat left 4px; }
 	ul.check li, li.check, ul.plus li, li.plus, ul.minus li, li.minus, ul.star li, li.star,
 	 ul.arrow li, li.arrow, ul.arrow2 li, li.arrow2, ul.square li, li.square,
 	  ul.circle li, li.circle, ul.cross li, li.cross { padding:0 0 7px 14px; border-bottom:1px dotted #e8edee; font-family:'Lato', Arial; color: #7f868c; } 

@@ -583,8 +583,8 @@ input.btn404 { float:left; margin:1px; padding:8px 12px 9px; }
 .pad-l40 { padding-left:40px; }
 
 /* New Oswald */
-#headline h3, #headline2 h3, #headline h3 small, #headline2 h3 small, .top-links a, .slogan1, .portfolio-item h5, h4.tit4blg span, .footer-navi a, .our-team h3, .blog-post h3, .blog-post h6, .blog-post h1, .blog-date-sp, .blog-com-sp, .blog-date-sp h3, .blog-date-sp span, h6.blog-date, h6.blog-cat, h6.blog-author, .pin-box h4, .tline-box h4, .lts-blg h5, a.readmore, a.magicmore, .icon-box h5, .icon-box h4, .icon-box h5 strong, .icon-box h4 strong, .blox h4, .lts-blg-dt  { font-family: 'Oswald','Lato', serif; font-weight:300; }
-.lts-blg h5, .icon-box h5 strong, .icon-box h4 strong, .top-links a, .footer-navi a, .blog-post h3, .blog-date-sp, .blog-com-sp, .blog-date-sp h3, .blog-date-sp span, .blog-post h1 { font-weight:400; }
+/*#headline h3, #headline2 h3, #headline h3 small, #headline2 h3 small, .top-links a, .slogan1, .portfolio-item h5, h4.tit4blg span, .footer-navi a, .our-team h3, .blog-post h3, .blog-post h6, .blog-post h1, .blog-date-sp, .blog-com-sp, .blog-date-sp h3, .blog-date-sp span, h6.blog-date, h6.blog-cat, h6.blog-author, .pin-box h4, .tline-box h4, .lts-blg h5, a.readmore, a.magicmore, .icon-box h5, .icon-box h4, .icon-box h5 strong, .icon-box h4 strong, .blox h4, .lts-blg-dt  { font-family: 'Oswald','Lato', serif; font-weight:300; }
+.lts-blg h5, .icon-box h5 strong, .icon-box h4 strong, .top-links a, .footer-navi a, .blog-post h3, .blog-date-sp, .blog-com-sp, .blog-date-sp h3, .blog-date-sp span, .blog-post h1 { font-weight:400;*/ }
 .top-links a { letter-spacing:0.07em;}
 
 

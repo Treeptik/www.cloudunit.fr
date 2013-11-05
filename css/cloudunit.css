@@ -4,8 +4,14 @@ body {
 }
 
 p {
-	font-family: 'open sans', sans-serif;
+	font-family: 'museo-sans', sans-serif;
 	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
 }
 
 .promobox {
@@ -29,6 +35,7 @@ p {
 
 .wrap section {
 	margin-top: 48px;
+	margin-bottom: 48px;
 }
 
 .slide {
@@ -39,17 +46,16 @@ p {
 }
 
 @-webkit-keyframes slide {
-  from{
-      background-position-y:600%;
-  }
-  to{
-      background-position-y:-400%;
-  }
+	from{
+		background-position-y:600%;
+	}
+	to{
+		background-position-y:-400%;
+	}
 }
 
 .slide h2 {
 	font-size: 3.75rem;
-	font-weight: bold;
 	color: #34495e;
 	line-height: 5.625rem;
 	color: #fff;
@@ -101,8 +107,8 @@ p {
 	margin-top: 16px;
 }
 
-#features p {
-	color: #95a5a6;
+h1 + p {
+	color: #999;
 }
 
 .icon {
@@ -111,10 +117,32 @@ p {
 	width: 120px;
 	border-radius: 120px;
 	margin: 0 auto;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
 .icon img {
-	margin-top: 25%;
+	width: 48px;
+	margin: 28% auto;
+	opacity: 0.9;
+}
+
+.icon:hover{
+	box-shadow: 0 120px 120px #fff;
+	background-color: transparent;
+	transition: all ease 0.8s;
+	box-sizing: border-box;
+}
+
+.icon:before:hover{
+	content: "";
+	background-color: blue;
+	height: 80px;
+	width: 80px;
+	border-radius: 80px;
+	box-sizing: border-box;
+	margin-left: -80px;
+	float: left;
+
 }
 
 .slide .blox h4 {
@@ -122,9 +150,14 @@ p {
 	font-weight: normal;
 }
 
+.slide .blox p, .slide .blox strong {
+	font-size: 1em;
+}
+
+
 .slide .blox .get {
 	text-align: center;
-	background-color: #ffa02f;
+	background-color: #f1c40f;
 	padding: 8px 106px;
 	margin-bottom: 18px;
 	border-radius: 3px;
@@ -133,8 +166,8 @@ p {
 }
 
 .slide .blox .get:hover {
-	background-color: #e67e22;
-	transition: background-color ease-out 0.5s;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	transition: all 0.8s;
 }
 
 .slide .blox input {
@@ -143,35 +176,150 @@ p {
 	margin: 18px auto;
 }
 
-.contact h3 {
-	font-family: 'Oswald','Lato',serif;
-	font-weight: 300;
-	margin-bottom: 16px;
+
+.promobox.features {
+	overflow: hidden;
 }
 
-.contact li:before {
+
+.promobox.our-team{
+	background: transparent url(../images/bgs/comput-bg.png) center center no-repeat;
+	background-size: cover;
+}
+.promobox.our-team h4{
+	text-align: left
+}
+
+
+.promobox.our-team h4 + p {
+	text-align: justify;
+	line-height: 1.5em;
+	padding: 0;
+	color: #505c64;
+}
+
+.promobox .feature-list, .promobox .team, .promobox .contact {
+	color: #666e74;
+	overflow: hidden;
+}
+
+.promobox .team, .promobox .contact {
+	background-color: #fff;
+	margin: 1.5em 0;
+	padding: 15px;
+	border-radius: 6px;
+}
+
+.promobox .team {
+	text-align: justify;
+}
+
+.promobox .feature-list h3, .promobox .team h3, .promobox .contact h3 {
+	color: #666e74;
+	font-weight: 700;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+
+.promobox .team li, .promobox .contact li {
+	float: left;
+	margin: 1em 0 0 0;
+	clear: both;
+}
+
+ul.cloud li, li.cloud {
+	background: url(../images/li-cloud.png) no-repeat left 8px;
+}
+
+.promobox .steps {
+	float: right;
+}
+
+
+.promobox .steps .rounded {
+	counter-reset: li;
+}
+
+.promobox .steps .rounded li{
+	position: relative;
+	display: block;
+	padding: .5em .5em .5em 2em;
+	*padding: .4em;
+	margin: .5em 0;
+	text-decoration: none;
+	border-radius: .3em;
+	font-size: 1.2em;
+	line-height: 1.8em;
+	color: #666e74;
+}
+
+.promobox .steps .rounded li:before{
+	content: counter(li, decimal);
+	counter-increment: li;
+	position: absolute;	
+	left: -1.3em;
+	top: 50%;
+	margin-top: -1.3em;
+	background: #f1c40f;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	border: .3em solid #fff;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 2em;
+	transition: all .3s ease-out;
+}
+
+.promobox .video {
+	opacity: 0.5;
+}
+
+.promobox .feature-list li, .promobox .contact li{
+	font-size: 1.2em;
+	line-height: 1.8em;
+	float: left;
+	clear: both;
+}
+
+
+.contact li:before, .feature-list li:before {
 	content: "";
 	width: 16px;
 	height: 16px;
+	margin-bottom: 1em;
 	display: block;
+	margin-right: 16px;
 	float: left;
-	margin-right: 8px;
+	margin-top: 0.4em;
 }
+
 .contact li.adresse:before {
-	background: transparent url(../images/social_address.png) left top no-repeat;
-}
-
-.contact li.tel:before {
-	background: transparent url(../images/social_phone.png) left top no-repeat;
-}
-
-.contact li.email:before{
-	background: transparent url(../images/social_mail.png) left top no-repeat;
+	background: transparent url(../images/social_address.png) center top no-repeat;
 	width: 20px;
 }
 
+.contact li.tel:before {
+	background: transparent url(../images/social_phone.png) center top no-repeat;
+	width: 20px;
+}
 
+.contact li.email:before{
+	background: transparent url(../images/social_mail.png) center top no-repeat;
+	width: 20px;
+}
 
+.contact li.blog:before{
+	background: transparent url(../images/social_blogger.png) center top no-repeat;
+	width: 20px;
+}
+
+.contact .hidden {
+	display: block;
+	text-indent: -200px;
+	float: left;
+}
 
 
 /* Header
@@ -189,6 +337,10 @@ header {
 	float: right;
 }
 
+.branding .name small {
+	font-weight: 300;
+}
+
 
 .branding .logo {
 	height: 40px;
@@ -201,6 +353,10 @@ header {
 	font-weight: bold;
 	color: #505c64;
 	line-height: 0;
+}
+
+.branding .name small {
+	font-weight: 300;
 }
 
 .branding .slogan1 {
@@ -240,7 +396,7 @@ header {
 	font-family: 'open sans', sans-serif;
 }
 
- figcaption {
+figcaption {
 	padding-left: 45px;
 }
 
@@ -255,6 +411,8 @@ h4 {
 
 footer .footbot {
 	height: 48px;
+	overflow: hidden;
+	text-align: left;
 }
 
 footer .footbot img {
@@ -263,228 +421,51 @@ footer .footbot img {
 	opacity: 1;
 }
 
-
-/* Graphics
-================================================== */
-
-/*Tetris*/
-
-.tetris {
-	top: 20%;
-	height: 230px;
-	width: 230px;
-	margin: 0 auto;
-	position: absolute;
-	right: 45%;
+footer .logo-footer{
+	height: 36px;
 }
 
-.tetris h4 {
-	position: absolute;
+footer .subscribe input, footer .subscribe label, footer .subscribe .get{
+	float: left;
+	margin-right: 15px;
+}
+
+footer .subscribe .get {
 	text-align: center;
-	font-size: 1rem;
-	line-height: 1.5rem;
+	background-color: #f1c40f;
+	padding: 7px 90px;
+	margin-bottom: 18px;
+	border-radius: 3px;
 	color: #fff;
-	display: block;
-	width: 230px;
-	letter-spacing: 1px;
-	font-family: 'consolas';
-	top: -300px;
+	font-size: 1em;
 }
 
-.tetris .block1 {
-	background: url(../images/tetris/block1.png) no-repeat center center;
-	position: absolute;
-	height: 138px;
-	width: 93px;
-	top: -300px;
-	left: 0;
+footer .subscribe .get:hover{
+	background-color: #f39c12;
 }
 
-.tetris .block2 {
-	background: url(../images/tetris/block2.png) no-repeat center center;
-	position: absolute;
-	height: 138px;
-	width: 93px;
-	left: 93px;
-	top: -300px;
-}
-
-.tetris .block3 {
-	background: url(../images/tetris/block3.png) no-repeat center center;
-	position: absolute;
-	height: 138px;
-	width: 93px;
-	top: -300px;
-	left: 138px;
-}
-
-.tetris .block4 {
-	background: url(../images/tetris/block4.png) no-repeat center center;
-	position: absolute;
-	height: 138px;
-	width: 93px;
-	left: 0;
-	top: -300px;
-}
-
-.tetris .block5 {
-	background: url(../images/tetris/block5.png) no-repeat center center;
-	position: absolute;
-	height: 138px;
-	width: 93px;
-	left: 92px;
-	top: -300px;
-}
-
-.tetris .block6 {
-	background: url(../images/tetris/block6.png) no-repeat center center;
-	position: absolute;
-	height: 138px;
-	width: 93px;
-	left: 0;
-	top: -300px;
-}
-
-.tetris .block7 {
-	background: url(../images/tetris/block7.png) no-repeat center center;
-	position: absolute;
-	height: 138px;
-	width: 93px;
-	top: -320px;
-	left: 138px;
-}
-
-/*Clouds*/
-
-.clouds {
-	top: 30%;
-	height: 230px;
-	width: 230px;
-	margin: 0 auto;
-	position: absolute;
-	right: -2000px;
+footer .subscribe label {
+	padding: 6px 0;
 }
 
 
-.cloudmain {
-	position: relative;
-	width: 229px;
-	height: 229px;
-	background-color: white;
-	border-radius: 230px;
-	left: 50%;
+input[type="email"]{
+	border-radius: 3px;
+	font-family: 'open-sans', sans-serif;
 }
 
-.cloud1 {
-	position: absolute;
-	width: 70px;
-	height: 70px;
-	background-color: white;
-	border-radius: 70px;
-	top: 10%;
-	right: -15%;
+input[type="email"]:focus {
+	opacity: 0.95;
+	outline-color: transparent;
+	border-color: transparent; 
+	box-shadow: none;
+	background-color: #eee;
 }
 
-.cloud2 {
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	background-color: white;
-	border-radius: 100px;
-	top: 30%;
-	right: -10%;
+.shadow {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
-.cloud3 {
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	background-color: white;
-	border-radius: 100px;
-	top: 60%;
-	right: 50%;
-
+#team img{
+	border-radius: 6px;
 }
-
-.cloud4 {
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	background-color: white;
-	border-radius: 100px;
-	top: -10%;
-	right: 40%;
-}
-
-.cloud5 {
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	background-color: white;
-	border-radius: 100px;
-	top: -5%;
-	right: 0;
-}
-
-
-.cloud6 {
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	background-color: white;
-	border-radius: 100px;
-	top: 55%;
-	right: 50%;
-}
-
-.cloud7 {
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	background-color: white;
-	border-radius: 100px;
-	top: 60%;
-	right: 0%;
-}
-
-.cloud8 {
-	position: absolute;
-	width: 70px;
-	height: 70px;
-	background-color: white;
-	border-radius: 70px;
-	top: 50%;
-	right: 85%;
-}
-
-.cloud9 {
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	background-color: white;
-	border-radius: 70px;
-	top: 55%;
-	right: 10%;
-}
-
-.cloud10 {
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	background-color: white;
-	border-radius: 100px;
-	top: 15%;
-	right: 70%;
-}
-
-.cloud11 {
-	position: absolute;
-	width: 70px;
-	height: 70px;
-	background-color: white;
-	border-radius: 70px;
-	top: 10%;
-	right: 15%;
-}
-
-
