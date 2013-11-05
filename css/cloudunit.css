@@ -183,8 +183,8 @@ h1 + p {
 
 
 .promobox.our-team{
-	background: transparent url(../images/bgs/comput-bg.png) center center no-repeat;
-	background-size: cover;
+	background: #fdfdfd url(../images/photo-team.png) center bottom no-repeat;
+	background-size: 65%;
 }
 .promobox.our-team h4{
 	text-align: left
@@ -409,21 +409,14 @@ h4 {
 	margin-bottom: 48px;
 }
 
-footer .footbot {
-	height: 48px;
-	overflow: hidden;
-	text-align: left;
-}
-
-footer .footbot img {
-	position: relative;
-	margin: 0 15px 0 0;
-	opacity: 1;
+.footbot {
+	border-radius: 6px;
 }
 
 .footer-navi{
 	text-transform: none;
 	font-size: 1em;
+	text-align: center;
 }
 
 .footer-navi a {
@@ -437,6 +430,7 @@ footer .footbot img {
 footer .logo-footer{
 	height: 36px;
 }
+
 
 footer .subscribe input, footer .subscribe label, footer .subscribe .get{
 	float: left;
@@ -479,6 +473,24 @@ input[type="email"]:focus {
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
-#team img{
-	border-radius: 6px;
+#dialog{
+	width: 100%;
+	background-color: #fff;
+	margin: 0 auto;
+
+}
+
+#header a.close-button {
+text-align: center;
+background-color: #f1c40f;
+padding: 4px 20px;
+margin-bottom: 18px;
+border-radius: 3px;
+color: #fff;
+font-size: 1em;
+}
+
+#header a.close-button:hover {
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+transition: all 0.8s;
 }

@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /cloudunit/
+Disallow: /cloudunit/mentions.html

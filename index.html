@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="fr-FR"> <!--<![endif]-->
 <head>
 
 	<!-- Basic Page Needs
@@ -13,10 +13,11 @@
 
 	<!-- CSS
 	================================================== -->
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css"  media="all">
 	<link rel="stylesheet" href="css/cloudunit.css" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Oswald:300,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
 
 	<!-- JS
 	================================================== -->
@@ -41,7 +42,7 @@
 		<div class="branding aligncenter">
 			<h1 class="name"><img id="img-logo" class="logo" src="images/picto_cloudunit_dark.png" alt="logo de Cloud Unit">CloudUnit<small> beta</small></h1>
 			<div>
-			</header>
+	</header>
 
 			<section id="cloudunit" class="slide aligncenter">
 				<div class="container">	
@@ -51,7 +52,7 @@
 						<h4>En attendant le lancement</h4>	
 						<p>Profitez d'un hébergement Tomcat / Mysql gratuit sur la version beta.</p>
 						<form action="#" method="post" id="subscribe-form">
-							<input type="email" value="votre adresse email" placeholder="votre adresse email">
+							<input type="email" value="votre adresse email" value="votre adresse email" placeholder="votre adresse email">
 							<a class="get" href="#">Inscription</a>
 						</form>
 					</div>
@@ -133,13 +134,13 @@
 				<section id="team" class="container">
 					<div class="alignleft team-bg">
 						<div class="intro aligncenter">
-							<h1>Cloud Unit est développé par Treeptik</h1>
+							<h1>Cloud Unit est développé par TreeptiK</h1>
 						</div>
 						<div class="sixteen columns promobox our-team shadow">
 							<div class="six columns">
 								<div class="team">
 									<h3>Une entreprise innovante</h3>	
-									<p>Cloud Unit est une plateforme en mode PaaS developpée par <a href="http://www.treeptik.fr">Treeptik</a>, une Jeune Entreprise Innovante qui bénéficie chaque année du Crédit Impôt Recherche. Nous développons des solutions innovantes autour des technologies Java / JEE et du cloud computing.</p>
+									<p>Cloud Unit est une plateforme en mode PaaS developpée par <a href="http://www.treeptik.fr">TreeptiK</a>, une Jeune Entreprise Innovante qui bénéficie chaque année du Crédit Impôt Recherche. Nous développons des solutions innovantes autour des technologies Java / JEE et du cloud computing.</p>
 								</div>
 								<div class="contact">		
 									<h3>Contact</h3>
@@ -147,7 +148,7 @@
 										<li class="adresse"><span class="hidden">Adresse:</span>100, route des Houillères, 13590 Meyreuil</li>
 										<li class="tel"><span class="hidden">Téléphone:</span>04 42 61 28 55</li>
 										<li class="email"><span class="hidden">Email:</span>support@cloudunit.fr</li>
-										<li class="blog"><span class="hidden">Blog:</span><a href="http://blog.treeptik.fr" title="le blog des developpeurs">Le blog des devs</a></li>
+										<li class="blog"><span class="hidden">Blog:</span><a href="http://blog.treeptik.fr" title="le blog des développeurs de Treeptik">Le blog des devs</a></li>
 									</ul>
 								</div>
 							</div>
@@ -170,24 +171,24 @@
 					</div>
 				</section> <!-- end of team -->
 			</div>
-			<span id="scroll-top"><a class="scrollup"></a></span>
 			<footer>
-				<div class="footbot container" >
-					<div class="footer-navi four columns">
-						<ul>
-							<li><small class="alignleft"><a href="#">Mentions légales</a></small></li>
-							<li><small class="aligncenter">Une application créée par<a href="http://www.treeptik.fr">Treeptik</a></small></li>
-						</ul>
-					</div>
-					<div class="subscribe ten columns">
-						<form action="#" method="post" id="subscribe-form">
-							<label for="email">Testez gratuitement Cloud Unit</label>
-							<input type="email" placeholder="votre adresse email" name="email">
-							<a class="get" href="#">Inscription</a>
-						</form>
+				<div class="footbot container clearfix" >
+					<div class="row">
+						<div class="subscribe twelve columns offset-by-four">
+							<form action="#" method="post" id="subscribe-form">
+								<label for="email">Testez gratuitement Cloud Unit</label>
+								<input type="email" placeholder="votre adresse email" name="email">
+								<a class="get" href="#">Inscription</a>
+							</form>
+						</div>
+						<div class="footer-navi sixteen columns">
+							<small>Une application créée par<a href="http://www.treeptik.fr">Treeptik</a></small>
+							<small><a id="opener" href="mentions.html" title="lire les mentions légales">Mentions légales</a></small>
+						</div>
 					</div>
 				</div><!-- end-footbot -->
 			</footer>
+
 <!-- End Document
 	================================================== -->
 	<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523ae65b6d3203d2"></script>
