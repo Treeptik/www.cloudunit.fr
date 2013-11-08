@@ -168,40 +168,23 @@
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"] {
-	  -moz-border-radius: 3px;
-	  -webkit-border-radius: 3px;
-	  border-radius: 3px;
-	  color: #fff;
-	  display: inline-block;
-	  font-size: 14px;
-	  text-transform: uppercase;
-	  font-weight: bold;
-	  text-decoration: none;
-	  text-shadow: 0 -1px rgba(0, 0, 0, .34);
-	  cursor: pointer;
-	  margin-bottom: 21px;
-	  line-height: normal;
-	  padding: 8px 12px;
-	  font-family: Helvetica, Arial, sans-serif;
-	  border:1px solid #339933; 
-	  background: #85bc36; /* Old browsers */	  
-	  background: -moz-linear-gradient(top, #a0c14d, #5aa300); /* FF3.6+ */
-	  background: #e1e7ec -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a0c14d), color-stop(100%,#5aa300)); /* Chrome,Safari4+ */
-	  background: -webkit-linear-gradient(top, #a0c14d, #5aa300); /* Chrome10+,Safari5.1+ */		 
-	  background: -ms-linear-gradient(top, #a0c14d, #5aa300); /* IE10+ */
-	  background: -o-linear-gradient(top, #a0c14d, #5aa300); /* Opera11.10+ */
-	  background: linear-gradient(top, #a0c14d, #5aa300); /* W3C */	  
-	  -webkit-box-shadow: 0px 0px 2px #fff inset;
-	  -moz-box-shadow: 0px 0px 2px #fff inset;
-	  box-shadow: 0px 0px 2px #fff inset;
-	   }
+	 text-align: center;
+	background-color: #f1c40f;
+	padding: 8px 100px;
+	margin-bottom: 18px;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 1em;
+	border: none;
+	font-weight: bold;
+	}
 
 	.button:hover,
 	button:hover, a.price-send:hover,
 	input[type="submit"]:hover,
 	input[type="reset"]:hover,
 	input[type="button"]:hover {
-		background: #a0c14d;
+		background: #f39c12;
 		}
 
 
@@ -347,12 +330,10 @@
 		-webkit-border-radius: 1px;
 		border-radius: 1px;
 		color: #888;
-		margin: 0;
 		width: 210px;
 		max-width: 100%;
 		min-height: 21px;
 		display: block;
-		margin-bottom: 20px;
 		-moz-box-shadow: 0px 1px 1px rgba(0,0,0,.1) inset;
 		-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,.1) inset;
 		box-shadow:  0px 1px 1px rgba(0,0,0,.1) inset; 

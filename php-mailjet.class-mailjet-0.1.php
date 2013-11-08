@@ -20,7 +20,7 @@ class Mailjet
 	var $secure = true;
 	
 	# Mode debug ? 0 none / 1 errors only / 2 all
-	var $debug = 2;
+	var $debug = 0;
 
 	# Edit with your Mailjet Infos
 	var $apiKey = '0d13364370831e9382e3d3f2c1649f31'; 
