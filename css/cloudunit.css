@@ -467,14 +467,14 @@ top: 100%;
 
 .hero h2.pnf404 {
 padding: 0;
-font-size: 1.7rem;
+font-size: 1.6rem;
 font-weight: 600;
 margin-top: -2.5em;
-text-transform: capitalize;
+text-transform: uppercase;
 text-align: center;
 padding-left: 15px;
 font-style: inherit;
-letter-spacing: 0.6px;
+letter-spacing: .5;
 }
 
 .hero .blox {
@@ -628,7 +628,7 @@ top: -50px;
 	border-radius: 6px;
 }
 
-.promobox .feature-list h3, .promobox .team h3, .promobox .contact h3, .promobox .details h3 {
+.promobox h3 {
 	color: #666e74;
 	font-weight: 700;
 	margin-bottom: 0.5em;
