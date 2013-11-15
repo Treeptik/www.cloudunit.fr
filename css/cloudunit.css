@@ -422,16 +422,27 @@ top: 100%;
 .hero {
 	width:100%;
 	position: relative;
-	background: #128abc url(../images/cloud-bg.png) right center no-repeat fixed;
-	-webkit-animation: hero 60s linear infinite;
+	background: #128abc url(../images/cloud-bg.png) top repeat-y fixed;
+	background-position: contain;
+	-webkit-animation: hero 45s linear infinite;
+	-moz-animation: hero 45s linear infinite;
 }
 
-@-webkit-keyframes hero {
+@-webkit-keyframes hero{
 	from{
-		background-position-y:600%;
+		background-position: right 400%;
 	}
 	to{
-		background-position-y:-400%;
+		background-position: right -400%;
+	}
+}
+
+@-moz-keyframes hero{
+	from{
+		background-position: right 400%;
+	}
+	to{
+		background-position: right -400%;
 	}
 }
 

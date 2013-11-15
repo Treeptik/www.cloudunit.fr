@@ -5,7 +5,10 @@ include_once('class.smtp.php');
 
 
 $mj = new Mailjet();
-$email = $_REQUEST['email'];
+
+if(isset($_REQUEST['email'])){
+	$email = htmlspecialchars($_REQUEST['email']);
+}
 
 # Parameters
 $params = array(
@@ -64,7 +67,7 @@ $mail->Body    = '<table cellpadding="0" cellspacing="0" border="0" style="margi
 <table style="margin: 0 0 0 10px;border-collapse:collapse;color: #444444; font-family: arial; font-size: 12px; border-color: #dddddd; background-color: #ffffff; "><tbody><tr><td width="580" style="vertical-align: top; padding: 5px 0; "><table cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:565px;color: #444444; font-family: arial; font-size: 12px; border-color: #dddddd; background-color: #ffffff; " width="565"><tbody><tr><td style="padding:5px 0 5px 5px; line-height:normal;"><hr style="margin: 0;display: block; height: 1px; line-height: 0; width: 100%; border: none; background-color: #505c64; "></td></tr></tbody></table></td></tr></tbody></table>
 <table style="margin: 0 0 0 10px;border-collapse:collapse;color: #444444; font-family: arial; font-size: 12px; border-color: #dddddd; background-color: #ffffff; "><tbody><tr><td width="580" style="vertical-align: top; padding: 5px 0; "><table cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:565px;color: #444444; font-family: arial; font-size: 12px; border-color: #dddddd; background-color: #ffffff; " width="565"><tbody><tr><td style="padding:5px 0 5px 5px;line-height:normal;color: #444444; font-family: arial; font-size: 12px; border-color: #dddddd; background-color: #ffffff; "><p style="margin: 0 0 10px;line-height: 1.3em;"><span style="font-size:14px;">Bonjour,<br><br>Cet email confirme votre inscription &agrave; <a href="http://treeptik.fr/cloudunit" style="color: #0033cc;border: none;text-decoration:none;"><span style="color:#1b95cd;">CloudUnit</span></a>.<br><br>Notre application est en cours de développement, nous vous communiquerons vos identifiants lors de sa mise en service.<br><br>Merci de votre confiance.<br><br>Cordialement,<br><br>Le service client,<br>CloudUnit</span></p></td></tr></tbody></table></td></tr></tbody></table>
 </td>
-			              </tr></tbody></table>';
+</tr></tbody></table>';
 $mail->AltBody = 'Bonjour,
 
 Cet email confirme votre inscription &agrave; CloudUnit.

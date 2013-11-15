@@ -212,11 +212,10 @@
 		event.preventDefault();
   $(".loading").fadeIn(); //show when submitting
 
-  var $form = $( this ),
+  $form = $( this ),
   term = $form.find( "input[name='email']" ).val(),
-  url = $form.attr( "action" );
-
-  var posting = $.post( url, { email: term } );
+  url = $form.attr( "action" ),
+  posting = $.post( url, { email: term } );
 
   posting.done(function( data ){
   	$(".loading").fadeOut();
