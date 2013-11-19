@@ -46,8 +46,8 @@ $mail = new PHPMailer;
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'in.mailjet.com';  // Specify main and backup server
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = '154644e23e0a831f5d0e87554e5a8e33';                            // SMTP username
-$mail->Password = '85f4801030f3296738e232935570fc50';// SMTP password
+$mail->Username = '';                            // SMTP username
+$mail->Password = '';// SMTP password
 $mail->Port = 587;                           
 $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 
